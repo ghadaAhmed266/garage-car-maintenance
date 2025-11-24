@@ -11,8 +11,8 @@ export class Home {
 constructor(private title: Title, private meta:Meta) {
     this.title.setTitle('Garage car maintenance'); // غيّر العنوان هنا
      this.meta.addTags([
-    { name: 'description', content: '' },
-    { name: 'keywords', content: '' }
+    { name: 'description', content: 'landing page for garage care maintenance' },
+    { name: 'keywords', content: 'garage car maintenance جراج تصليح سيارات' }
   ]);
   }
 }
