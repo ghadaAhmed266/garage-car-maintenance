@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.doppio,a,.h1 {
+  font-family: "Doppio One", sans-serif;
+}
+.inspiration{
+     font-family: "Inspiration", cursive;
+     font-size: 300px;
+}
+.gravity{
+    font-family: "Gravitas One", serif;
+    font-size: 24px;
+}
+p{
+      font-family: "Inter", sans-serif;
+
+}
+/* Small devices (tablet) */
+/* Medium devices (tablet landscape) */
+@media  (max-width: 991px) {
+     header{
+    padding-right: .01rem;
+    .logo{
+        width: 250px;
+        height: 120px;
+    }
+
+}
+a{
+    font-size: 18px;
+}
+.inspiration{
+     font-size: 180px;
+}
+.gravity{
+    font-family: "Gravitas One", serif;
+    font-size: 16px;
+}
+}
+
+/* Large devices (laptop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.inspiration{
+     font-size: 250px;
+}
+.gravity{
+    font-family: "Gravitas One", serif;
+    font-size: 20px;
+}
+}
+
+/* Extra large devices (large desktop) */
+@media (min-width: 1200px) {
+
+}

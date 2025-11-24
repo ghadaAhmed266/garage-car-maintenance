@@ -1,0 +1,299 @@
+$primaryColor:#050532;
+$secondColor:#ffffff;
+
+ a{
+    color: $secondColor;
+    font-size: 32px;
+    border:  5px solid $secondColor;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.h1{
+    font-size: 128px;
+    text-align: center;
+    color: $primaryColor;
+}
+ p{
+            font-size: 28px;
+            color: $secondColor;
+            line-height: 50px;
+        }
+header{
+position: relative;
+        z-index: 1111;
+            background-color: $primaryColor;
+    color: $secondColor;
+    padding-right: .5rem;
+    .logo{
+        width: 278px;
+        height: 124px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        img{width:100%;height: auto;}
+    }
+    .whats{
+        display: flex;
+        align-items: center;
+       
+    }
+    
+}
+
+.top{
+    .parent{
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        height: 700px;
+        .car,.stars,.content{position: absolute;top: 0;width: 100%;}
+        .car{
+            z-index: 5;
+            width: auto;
+            max-width: 80%;
+        }
+        .stars{
+            img{width: 130%;}
+            z-index: 4;
+            top: -335px;
+            transform: rotate(-50deg);
+        }
+        .gradient{
+            z-index: 3;
+            height: 100%;
+            background: linear-gradient(to bottom, #010A5AE8, $secondColor);
+             
+        }
+        .content{
+            width: 50%;
+            z-index: 7;
+            right: 0;
+            
+            .title,.span{color: $secondColor;}
+            .title{
+                position: relative;
+                .span{
+                    position: absolute;
+                    bottom: 75px;
+                    left: 75px;
+                }
+            }
+            a{
+                color: $primaryColor;
+                border:  5px solid $primaryColor;
+            }
+        }
+    }
+}
+
+.overview{
+    background-image:url("/assets/overview.png");
+    background-size: cover;
+    .content{
+        width: 60%;
+        background:rgba(5, 5, 50, 0.72);
+       
+        a{
+            margin-bottom: 3rem!important;
+        }
+    }
+}
+
+.our-service{
+    padding-top: 5rem;
+   
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة في الصف الأول */
+    grid-template-rows: auto auto;          /* صفين */
+    gap: 3rem;
+    text-align: center;
+    margin: 5rem;
+    .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(5, 5, 50, 0.87);
+        color: $secondColor;            
+        padding-top: 4rem;
+        border-radius: 3%;
+
+        img{
+            width: 80%;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+        
+    }
+}
+}
+
+.last-works{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    .content{
+        background: $primaryColor;
+        padding: 4rem 0;
+        margin-top: 5rem;
+        img{
+            max-width: 25%;
+            aspect-ratio: 1/.9;
+            border-radius: 2%;
+        }
+    }
+}
+
+.help{
+    .h1{font-size: 64px; padding: 2rem;}
+    .content{
+        border-bottom: 2px solid #000;
+        border-top: 2px solid #000;
+        padding: 2rem;
+    p{
+        color: $primaryColor;
+        margin: 1rem;
+    }
+    img{
+        max-width: 40%;
+        margin: 2rem;
+        border-radius: 2%;
+        min-height: 100%;
+    }
+}
+}
+
+.end{ 
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #000;
+    p{
+        padding: 1rem;
+            color: $primaryColor;
+            font-size: 46px;
+        }
+    .content{
+        img{
+            max-width: 50%;
+            border-radius: 2%;
+            margin:0 3rem;
+        }
+       
+    }
+}
+
+footer{
+    a{
+        color: $primaryColor;
+         border:  5px solid $primaryColor;
+    }
+    .brands{
+        a{
+            border-radius: 50%;
+            width: 68px;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            color: $secondColor;
+        }
+        .whatsapp{
+            background-color: rgba(20, 167, 66, 1);
+        }
+        .instagram{
+           background-color: rgba(8, 8, 157, 1);
+        }
+
+    }
+    .copy{
+        color: #000;
+        font-size: 32px;
+    }
+}
+/* Extra small devices (phones) */
+@media (max-width: 575px) {
+    header{
+        .whats{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a{margin: 5px!important;}
+        }
+    }
+    .top{
+        .parent{
+        .content{
+            .title{
+                .span{
+                    bottom: 65px;
+                    left: 65px;
+                }
+            }
+        }
+    }}
+.our-service{.services{
+     grid-template-columns: repeat(2, 1fr); /* 3 أعمدة في الصف الأول */
+    grid-template-rows: auto auto;  
+}}
+ .help{.content{
+        flex-direction: column;
+        img{min-width: 100%;}
+    }}
+.end{ 
+    .content{flex-direction: column;
+        p{font-size: 36px;}
+        img{
+            max-width: 100%;}}}
+}
+
+/* Small devices (tablet) */
+/* Medium devices (tablet landscape) */
+@media  (max-width: 991px) {
+     header{
+    padding-right: .01rem;
+    .logo{
+        width: 250px;
+        height: 120px;
+    }
+
+}
+a{
+    font-size: 18px;
+}
+.top{
+        .parent{
+        .content{
+            .title{
+                .span{
+                    bottom: 45px;
+                    left: 45px;
+                }
+            }
+        }
+    }}
+    .our-service{.services{
+    gap: .5rem;
+    margin: 5rem 1rem;}}
+   
+footer{
+    .brands{
+        a{
+            font-size: 24px;
+            width: 42px;
+            height: 42px;
+            padding: 0;
+        }}}
+}
+
+/* Large devices (laptop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+/* Extra large devices (large desktop) */
+@media (min-width: 1200px) {
+
+}
